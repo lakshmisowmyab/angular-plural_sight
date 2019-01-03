@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+  <script data-require="angular.js@*" data-semver="4.0.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+  <script data-require="angular.js@*" data-semver="4.0.0" src="script.ts"></script>
+  <script data-require="angular.js@*" data-semver="4.0.0" src="system.config.js"></script>
+  <script data-require="angular.js@*" data-semver="4.0.0" src="tsconfig.json"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <!--<script src="scriptctrl.js"></script>-->
+</head>
+
+<body ng-controller="MainCtrl">
+  <h1>{{message.length}}</h1>
+  <div>
+    <div>First Name: {{person.firstName}}</div>
+    <div>Last Name: {{person.lastName}}</div>
+    <div>
+      <img src="{{person.imgUrl}}" alt="Just Me" title="{{person.firstName}}  {{person.lastName}}">
+    </div>
+    <div>Location got from API call is: {{response.}}</div>
+  </div>
+</body>
+
+</html>
